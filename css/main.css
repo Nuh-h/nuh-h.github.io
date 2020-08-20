@@ -1,0 +1,81 @@
+/*
+Color Palette
+https://coolors.co/f87666-253237-5adbff-ffd07b-c08497
+#F87666 - Bittersweet
+#253237 - Gunmetal
+#5ADBFF - Sky Blue Crayola
+#FFD07B - Orange Yellow Crayola
+#C08497 - Puce
+---
+#1C0B19 - Xiketic
+#140D4F - Midnight Blue
+#4EA699 - Polished Pine
+#2DD881 - Emerald
+#6FEDB7 - Medium AquaMarine
+*/
+
+/*Global Styles 
+-------------------*/
+body {
+	color: #253237;
+	margin: 0;
+	padding: 0;
+}
+img {
+	width: 300px;
+}
+a {
+	color: white;
+}
+a:hover {
+	text-decoration: none;
+}
+h2 {
+	margin:0;
+}
+.content-wrap {
+	width: 900px;
+	margin: 0 auto;
+	padding: 60px 0;
+}	
+/*Profile
+-------------------*/	
+header {
+	background: #5ADBFF;
+	color: #253237;
+}
+
+/*Projects
+-------------------*/
+.projects {
+	background: #C08497;
+}
+.projects a {
+	color: #5ADBFF;
+}
+.projects .btn {
+	color: #5ADBFF ;
+	background: #253237;
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 4px;
+	display: inline-block;
+}
+.projects .btn:hover {
+	background: rgba(37,50,55,80%)
+}
+/*Work Experiences
+-------------------*/
+.work-experience {
+	background: #F87666;
+}
+
+/*Education
+-------------------*/
+
+
+/*Contact Info 
+-------------------*/
+footer {
+	background: #FFD07B;
+}
