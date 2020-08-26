@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuh's personal webpage</title>
+    <title>Nuh's personal draft webpage</title>
 
 	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <main>
@@ -15,19 +15,19 @@
 		<div class="content-wrap">
 			<h1>Nuh A. H.</h1>
 			<h2>Graduate Tech Enthusiast</h2>
-
-			<p>Fascinated by the impossibilities that are yet made possible regularly both in Tech and in Mathematics. Looking forward to a career in Tech.</p>
+			<p> NOTE: If you ever stumble across this, know that it is a draft and a practise at that for my HTML/CSS/JavaScript learning.
+			<p>Fascinateed by the impossibilities that are yet made possible regularly both in Tech and in Mathematics. Looking forward to a career in Tech.</p>
 			<p>Hopefully, a thrilling career path.</p>
 		</div>
 	  </header>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
       <section class="projects">
-		<div class="content-wrap">
+		<div class="content-wrap divider">
 			<h2>Featured Projects</h2>
 			<p>View selected projects below. More information can be found at <a href="http://github.com/nuh-h">git.com/nuh-h</a>.</p>
 
-			<!-- Copy the whole <section> block to add more projects. -->
+			<!-- Project 1. -->
 			<section class="project-item">
 			  <img src="images/thumbnail-1.jpg" alt="Image of SL2R-something">
 			  <h3>Research Intern: SL2(R) Group for Discrete Rings R</h3>
@@ -35,36 +35,67 @@
 			  <p>Rewarding experience of research.</p>
 			  <a class="btn" href="#" target="_blank">View project / case study</a>
 			</section>
+			
+			<!-- Project 2 -->
+			<section class="project-item">
+			  <img src="images/thumbnail-2.jpg" alt="Image of Project">
+			  <h3>Project: Personal Journey</h3>
+			  <p>A nice project to overcome personal difficulties. Result very satisfactory.</p>
+			  <p>Wonderful people can be found if you look at the right place.</p>
+			  <a class="btn" href="#" target="_blank">View project 2</a>
+			</section>
         <!-- End of Project block. -->
 		</div>
       </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
       <section class="work-experience">
-		<div class="content-wrap">
+		<div class="content-wrap item-details divider">
 			<h2>Work Experience</h2>
 			<!--<p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>-->
 
-			<!-- Copy this whole <section> block to add more jobs. -->
-			<section>
-			  <h3>Student Ambassador</h3>
-			  <p>University of Leeds</p>
-			  <p>2018-2020</p>
-			  <p>Awesome student job on the fly.</p><!--Job summary goes here. Add as many paragraphs as you need-->
-			  <!--<p>Optional list:</p>-->
-			  <ul>
-				<li>Led tours.</li>
-				<li>Supported visitors.</li>
-				<li>Gave talks.</li>
-				<li>Hosted Leeds Festival of Science.</li>
-			  </ul>
+			<!-- Job 1 -->
+			<section class="job-item">
+			  <div class="job-details">
+				<h3>Student Ambassador</h3>
+				<p>University of Leeds</p>
+				<p>2018-2020</p>
+			  </div>
+			  <div class="job-summary">
+				  <p>Awesome student job on the fly.</p><!--Job summary goes here. Add as many paragraphs as you need-->
+				  <!--<p>Optional list:</p>-->
+				  <ul>
+					<li>Led tours.</li>
+					<li>Supported visitors.</li>
+					<li>Gave talks.</li>
+					<li>Hosted Leeds Festival of Science.</li>
+				  </ul>
+			  </div>
+			</section>
+			
+			<!-- Job 2 -->
+			<section class="job-item">
+				<div class="job-details">
+				  <h3>Representative</h3>
+				  <p>University of Leeds</p>
+				  <p>2019</p>
+				</div>
+			  <div class="job-summary">
+				  <p>Awesome job with big decision makers.</p><!--Job summary goes here. Add as many paragraphs as you need-->
+				  <!--<p>Optional list:</p>-->
+				  <ul>
+					<li>Attended meetings.</li>
+					<li>Provided trivial perspective.</li>
+					<li>Enjoyed listening.</li>
+				  </ul>
+			  </div>
 			</section>
 		</div>
         <!-- End of Job block. -->
       </section>
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section class-"education">
+      <section class="education item-details">
 		<div class="content-wrap">
 			<h2>Education</h2>
 
@@ -84,7 +115,7 @@
 			<h2>Let's Keep in Touch!</h2>
 
 			<!-- Social media and contact links. Add or remove any networks. -->
-			<ul>
+			<ul class="contact-list">
 			  <li><a href="#" target="_blank">Email</a></li>
 			  <li><a href="http://github.com/nuh-h" target="_blank">GitHub</a></li>
 			  <li><a href="#" target="_blank">LinkedIn</a></li>
