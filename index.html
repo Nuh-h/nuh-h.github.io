@@ -3,44 +3,73 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuh's personal draft webpage</title>
+    <title>Nuh's webpage</title>
 
 	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+	<nav>
+		<header class="menu">
+			<div class="mobile-menu">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<a href="#" class="logo">NX<span>3<span></a>
+			<ul class="menu-items">
+				<li class="menu-item">
+					<a href="index.html" class="menu-drop">Home<i class="arrow"></i></a>
+					<ul class="sub-menu">
+						<li class="menu-item"><a href="#0">Home1</a>
+					</ul>
+				</li>
+				<li class="menu-item">
+					<a href="#" target="_blank" class="menu-drop">About <i class="arrow"></i></a>
+					<ul class="sub-menu">
+						<li class="menu-item"><a href="about.html">About1</a>
+						<li class="menu-item"><a href="#0">About2</a>
+					</ul>					
+				</li>
+				<li class="menu-item"> <a href="#" target="_blank">Languages</a> </li>
+				<li class="menu-item"> <a href="#" target="_blank">Projects</a> </li>
+				<li class="menu-item"> <a href="time.html">Time</a> </li>
+			</ul>
+		</header>
+
+	</nav>
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <header>
-		<div class="content-wrap">
-			<h1>Nuh A. H.</h1>
+      <section class="intro">
+		<div class="content-wrap intro">
+			<h1>Nuh A. Hassan</h1>
 			<h2>Graduate Tech Enthusiast</h2>
-			<p> NOTE: If you ever stumble across this, know that it is a draft and a practise at that for my HTML/CSS/JavaScript learning.
-			<p>Fascinateed by the impossibilities that are yet made possible regularly both in Tech and in Mathematics. Looking forward to a career in Tech.</p>
-			<p>Hopefully, a thrilling career path.</p>
+			<p style="color:yellow; font-weight: large">NOTE: This is a draft, no judgements other than tips! </p>
+			<p>It is a draft to practise my HTML/CSS/JavaScript learning.</p>
+			<p>Fascinated by the impossibilities that are yet made possible regularly both in Tech and in Mathematics. Looking forward to a career in Tech.</p>
+			<p>Welcome.</p>
 		</div>
-	  </header>
+	  </section>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
       <section class="projects">
 		<div class="content-wrap divider">
 			<h2>Featured Projects</h2>
-			<p>View selected projects below. More information can be found at <a href="http://github.com/nuh-h">git.com/nuh-h</a>.</p>
-
+			<p>View selected projects below. More information can be found at <a href="#" class="git-link">git.com/nuh-h</a>.</p>
 			<!-- Project 1. -->
 			<section class="project-item">
 			  <img src="images/thumbnail-1.jpg" alt="Image of SL2R-something">
 			  <h3>Research Intern: SL2(R) Group for Discrete Rings R</h3>
-			  <p>A nice project in Algebra, exploring the discrete aspect of SL2 Groups. Very challenging.</p>
-			  <p>Rewarding experience of research.</p>
-			  <a class="btn" href="#" target="_blank">View project / case study</a>
+			  <p>A nice project in Algebra, exploring the discrete aspect of SL2 Groups.</p>
+			  <p>A rewarding experience of research.</p>
+			  <a class="btn" href="#" target="_blank">View project</a>
 			</section>
 			
 			<!-- Project 2 -->
 			<section class="project-item">
 			  <img src="images/thumbnail-2.jpg" alt="Image of Project">
 			  <h3>Project: Personal Journey</h3>
-			  <p>A nice project to overcome personal difficulties. Result very satisfactory.</p>
+			  <p>A small project to overcome personal difficulties. A very satisfactory result.</p>
 			  <p>Wonderful people can be found if you look at the right place.</p>
 			  <a class="btn" href="#" target="_blank">View project 2</a>
 			</section>
@@ -85,7 +114,7 @@
 				  <!--<p>Optional list:</p>-->
 				  <ul>
 					<li>Attended meetings.</li>
-					<li>Provided trivial perspective.</li>
+					<li>Provided student perspective.</li>
 					<li>Enjoyed listening.</li>
 				  </ul>
 			  </div>
@@ -103,7 +132,7 @@
 			<section>
 			  <h3>University of Leeds</h3>
 			  <p>Bachelor of Science in Mathematics, 2017-2020.</p>
-			  <p>Several scholarships.</p>
+			  <p>Several awards.</p>
 			</section>
 		</div>
 		<!-- End of School block. -->
@@ -116,14 +145,15 @@
 
 			<!-- Social media and contact links. Add or remove any networks. -->
 			<ul class="contact-list">
-			  <li><a href="#" target="_blank">Email</a></li>
-			  <li><a href="http://github.com/nuh-h" target="_blank">GitHub</a></li>
-			  <li><a href="#" target="_blank">LinkedIn</a></li>
+			  <li><a href="#">Email</a></li>
+			  <li><a href="#" target="_blank">GitHub</a></li>
+			  <li><a href="#" >LinkedIn</a></li>
 			  <li><a href="#" target="_blank">Twitter</a></li>
 			  <li><a href="#" target="_blank">Facebook</a></li>
 			</ul>
 		</div>
       </footer>
     </main>
+	<script src="css/app.js"></script>	
   </body>
 </html>
