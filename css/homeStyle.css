@@ -1,3 +1,6 @@
+/* STILL A DRAFT. 
+
+
 /*Global Styles 
 -------------------*/
 html {
@@ -9,12 +12,11 @@ html {
 
 body {
 	color: #00fff2;
-	margin: 100px;
+	margin: 40px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	line-height: 1.5;
 	background-color: #314046;
-
 }
 
 h1 {
@@ -36,12 +38,12 @@ h1, h2 {
 /* OLD and NEW stuff */
 .cards {
 	height: 200px;
-	display: inline-flex;
+	display: inline-block;
 	background-color: white;
 	color: white;
 	border: 2px solid red;
 	width: 48%;
-	float:left;
+	float:none;
 	margin: 8px;
 }
 
@@ -61,7 +63,7 @@ footer {
 
 /* Responsive 
 --------------------*/
-@media screen and (min-width:750px){
+@media screen and (min-width:767px){
 	header, footer {
 		text-align: center;
 	}
@@ -71,19 +73,6 @@ footer {
 		justify-content: center;
 	}
 }
-/* @media screen and (max-width:749px){
-	h1 {
-		font-size: 75px;
-		line-height: 0.9;
-		margin-bottom: 20px;
-	}
-	h2 {
-		line-height: 1;
-	}
-	.contact-list a {
-		padding: 5px;
-	}
-} */
 @media screen and (max-width:768px){
 	h1 {
 		font-size: 75px;
@@ -93,7 +82,21 @@ footer {
 	h2 {
 		line-height: 1;
 	}
+	.cards {
+		display: inline-block;
+		width: 90%;
+		float:left;
+		margin: 8px;
+    }
 	.contact-list a {
 		padding: 5px;
 	}
-}
+} 
+@media screen and (min-width:769px) and (max-width:995px){
+	.cards {
+		display: inline-block;
+		width: 47%;
+		float:left;
+		margin: 8px;
+    }
+} 
