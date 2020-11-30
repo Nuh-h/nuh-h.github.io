@@ -1,4 +1,4 @@
-/* STILL A DRAFT. 
+/* STILL A DRAFT. Tested so far only on chrome!*/
 
 
 /*Global Styles 
@@ -36,6 +36,10 @@ h1, h2 {
 	margin: 0;
 }
 /* OLD and NEW stuff */
+.stuff{
+	display:flex;
+	justify-content:center;
+}
 .cards {
 	height: 200px;
 	display: inline-block;
@@ -82,21 +86,25 @@ footer {
 	h2 {
 		line-height: 1;
 	}
-	.cards {
-		display: inline-block;
-		width: 90%;
-		float:left;
-		margin: 8px;
+    .stuff{
+    	display:block;
+    	width:auto;
+    	justify-content:center;
+    	align-items: center;
     }
+    .cards {
+		display: inline-block;
+		width: 97%;
+	}
 	.contact-list a {
 		padding: 5px;
 	}
 } 
-@media screen and (min-width:769px) and (max-width:995px){
+/*@media screen and (min-width:769px) and (max-width:995px){
 	.cards {
 		display: inline-block;
 		width: 47%;
 		float:left;
 		margin: 8px;
     }
-} 
+} */
