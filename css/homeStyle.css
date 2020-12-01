@@ -52,6 +52,7 @@ h1, h2 {
 }
 img {
     width: 100%;
+    object-fit:fill;
 	align-items:center;
 }
 .newStuff,.oldStuff{
@@ -102,6 +103,11 @@ footer {
     .cards {
 		display: inline-block;
 		width: 97%;
+		background:none;
+	}
+	img {
+		width:120%;
+		object-fit:cover;
 	}
 	.contact-list a {
 		padding: 5px;
