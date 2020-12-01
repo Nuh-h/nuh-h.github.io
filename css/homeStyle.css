@@ -54,6 +54,7 @@ img {
     width: 100%;
     object-fit:fill;
 	align-items:center;
+	/*filter: drop-shadow(0 0 2px #c6f15c);*/
 }
 .newStuff,.oldStuff{
 	overflow:hidden;
