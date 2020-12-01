@@ -58,6 +58,14 @@ img {
 .newStuff,.oldStuff{
 	overflow:hidden;
 }
+a:hover img{
+	border:2px solid white;
+	display:flex;
+	position:absolute;
+	width:48%;
+	height:auto;
+	/*filter: blur(3px);*/
+}
 
 /*Contact Info 
 -------------------*/
