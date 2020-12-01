@@ -43,7 +43,7 @@ h1, h2 {
 .cards {
 	height: 200px;
 	display: inline-block;
-	background-color: white;
+	background-color: #1fa1a9;
 	color: white;
 	border: 2px solid #191818;
 	width: 48%;
@@ -51,9 +51,11 @@ h1, h2 {
 	margin: 8px;
 }
 img {
-	/*object-fit: cover;*/
+    width: 100%;
 	align-items:center;
-	width:100%
+}
+.newStuff,.oldStuff{
+	overflow:hidden;
 }
 
 /*Contact Info 
