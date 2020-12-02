@@ -51,7 +51,7 @@ h1, h2 {
 	background-color: #1fa1a9;
 	color: white;
 	border: 2px solid #191818;
-	width: 48%;
+	width: 100%;
 	float:none;
 	margin: 8px;
 }
@@ -71,6 +71,20 @@ a:hover img{
 	width:auto;
 	height:auto;
 	/*filter: blur(2px);*/
+}
+p{
+	display:none;
+}
+.cards a{
+	text-decoration:blink;
+}
+a:hover p{
+	display: flex;
+	font-size:14px;
+	color:yellow;
+	background:red;
+	justify-content:center;
+	align-items:center;
 }
 
 /*Contact Info 
