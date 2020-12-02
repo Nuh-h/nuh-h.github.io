@@ -40,6 +40,12 @@ h1, h2 {
 	font-weight: 400;
 	margin: 0;
 }
+p {
+	font-size: 15px;
+	padding: 0px 10px;
+	background-color: #1b2b01;
+	color:#FFEB3B;
+}
 /* OLD and NEW stuff */
 .stuff{
 	display:flex;
@@ -72,7 +78,7 @@ a:hover img{
 	height:auto;
 	/*filter: blur(2px);*/
 }
-p{
+.cards p{
 	display:none;
 }
 .cards a{
