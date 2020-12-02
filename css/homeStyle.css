@@ -18,7 +18,12 @@ body {
 	line-height: 1.5;
 	background-color: #314046;
 }
-
+main{
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 60px;
+}
 h1 {
 	font-size: 100px;
 	line-height: 1;
@@ -62,10 +67,10 @@ img {
 a:hover img{
 	border:2px solid white;
 	display:flex;
-	position:absolute;
-	width:48%;
+	position:relative;/*absolute*/
+	width:auto;
 	height:auto;
-	/*filter: blur(3px);*/
+	/*filter: blur(2px);*/
 }
 
 /*Contact Info 
