@@ -12,7 +12,7 @@ html {
 
 body {
 	color: #00fff2;
-	margin: 40px;
+	margin: 0px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	line-height: 1.5;
@@ -39,6 +39,8 @@ h1, h2 {
 	font-family: 'Caveat', cursive;
 	font-weight: 400;
 	margin: 0;
+	word-wrap:break-word;
+
 }
 p {
 	font-size: 15px;
@@ -97,14 +99,17 @@ a:hover p{
 -------------------*/
 footer {
 	background: #253237;
+	padding:1px;
+	margin:0;
 }
 .contact-list {
 	list-style-type: none;
 	padding: 0;
 }
 .contact-list a {
-	padding: 15px;
-	display: inline-block;
+	padding: 0px 15px;
+	color:#eae9e6;
+	/*display: inline-block;*/
 }
 
 /* Responsive 
