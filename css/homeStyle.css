@@ -24,6 +24,29 @@ main{
 	margin: 0 auto;
 	padding-top: 60px;
 }
+.qna ul:last-of-type {
+	margin-bottom:10px;
+}
+.qna ul{
+	/*border-top:2px solid black;
+	background-color: none;/*gray;*/
+	color: white;
+	list-style-type:none;
+	overflow:hidden;
+	margin:1px;
+	padding-left:1em;
+}
+.qna ul li:last-of-type{
+	padding:0 0 0 30px;
+}
+.qna ul li:first-of-type{
+	background-color: black;
+	display: inline-block;
+	width:100%;
+}
+.disappear{
+	display:none;
+}
 h1 {
 	font-size: 100px;
 	line-height: 1;
@@ -35,12 +58,15 @@ h1 {
 h2 {
 	font-size: 45px;
 }
-h1, h2 {
+h3 {
+	font-size:35px;
+	margin:0;
+}
+h1, h2, h3 {
 	font-family: 'Caveat', cursive;
 	font-weight: 400;
 	margin: 0;
 	word-wrap:break-word;
-
 }
 p {
 	font-size: 15px;
