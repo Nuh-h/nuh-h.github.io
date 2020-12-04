@@ -45,6 +45,22 @@ main{
 	display: inline-block;
 	width:100%;
 }
+.qna span {
+	background-color:#fdfdfd;
+	color: black;
+	border:1px solid grey;
+	border-radius:3px;
+	font-weight:500;
+	width:23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+.qna span:hover{
+	border-color:#505050;
+	background-color:#dedada;
+}
 .disappear{
 	display:none;
 }
