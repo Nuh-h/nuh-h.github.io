@@ -37,7 +37,8 @@ main{
 	padding-left:1em;
 }
 .qna ul li:last-of-type{
-	padding:0 0 0 30px;
+	padding-left:30px;
+	padding-bottom:10px;
 }
 .qna ul li:first-of-type{
 	background-color: black;
