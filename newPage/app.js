@@ -17,4 +17,4 @@ var play = ()=> {
     };
     playIntro();
 };
-setInterval(play(),70000)//every 1 minute and 10 seconds
+setInterval(()=>{play()},80000)//every 1 minute and 20 seconds
