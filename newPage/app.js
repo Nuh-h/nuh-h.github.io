@@ -4,14 +4,14 @@ const sentenceArray = sentence.split('\n');
 //console.log(sentenceArray);
 const delay = ms => new Promise(res => setTimeout(res, ms));
 const playIntro = async () => {
-  for(var word of sentenceArray){
-      elem.innerHTML="";
-      await delay(500);
-      console.log(word);
-      for(var letter of word){
-        elem.innerHTML+=letter;
-        await delay(200);
-      };
-  };
+	for(var word of sentenceArray){
+		elem.innerHTML="";
+		await delay(500);
+		console.log(word);
+		for(var letter of word){
+			elem.innerHTML+=letter;
+			await delay(200);
+		};
+	};
 };
-setInterval(playIntro(), 60000);
+setInterval(playIntro(), 30000);
