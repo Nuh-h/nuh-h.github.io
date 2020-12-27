@@ -11,7 +11,7 @@ const playIntro = async () => {
       for(var letter of word){
         elem.innerHTML+=letter;
         await delay(200);
-      }
-  }
+      };
+  };
 };
 setInterval(playIntro(), 60000);
