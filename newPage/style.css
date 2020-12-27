@@ -1,61 +1,44 @@
-/*
-Color Palette
-https://coolors.co/f87666-253237-5adbff-ffd07b-c08497
-#F87666 - Bittersweet
-#253237 - Gunmetal
-#5ADBFF - Sky Blue Crayola
-#FFD07B - Orange Yellow Crayola
-#C08497 - Puce
----
-#1C0B19 - Xiketic
-#140D4F - Midnight Blue
-#4EA699 - Polished Pine
-#2DD881 - Emerald
-#6FEDB7 - Medium AquaMarine
-*/
-
-/*Global Styles 
--------------------*/
 html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-body {
-	color: #253237;
-	margin: 40px;
-	padding: 0;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	line-height: 1.5;
-}
-h1 {
-	background-color: aqua;
+	font-family: 'Stardos Stencil', cursive;
 }
 
-main ul{
-	border-top:2px solid black;
-	background-color: gray;
-	color: white;
-	list-style-type:none;
-	overflow:hidden;
+body {
+	background-color:#1F422B;
 }
-main ul li:last-of-type{
-	padding:0 0 0 30px;
+
+nav {
+	background-color:#0F0E0E;
+	display:flex;
+	justify-content:space-around;
+	padding:15px;
 }
-main ul li:first-of-type{
-	background-color: black;
-	display: inline-block;
-	width:100%;
+nav a{
+	text-decoration:none;
+	color:#C8E320;
 }
-.disappear{
-	display:none;
+
+nav a:hover{
+	border-bottom:1px solid white;
+	transition:border-color 1s ease;
 }
-footer {
-	background-color: grey;
+
+main {
+	display:flex;
+	justify-content:center;
 }
-.fab {
-	background-color: green;
-	size: 190px;
+
+main p{
+	border:1px solid black;
+	padding:20px;
+	border-radius:12px;
+	background-color:beige;
+	display:flex;
+	justify-content:center;
+}
+
+.footer{
+	border-top:1px solid grey;
+	display:flex;
+	justify-content:center;
+	margin:20px 15% 0px 15%;
 }
