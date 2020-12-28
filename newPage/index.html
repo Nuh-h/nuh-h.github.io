@@ -6,7 +6,7 @@
     <title>Home</title>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 	
 	<link rel="stylesheet" href="style.css">
@@ -14,7 +14,7 @@
   </head>
   <body>
     <nav>    
-	    <span> <!-- Logo --> Nuh </span>
+	    <span class="logo"> <!-- Logo --> Nuh </span>
 
 	    <div class="nav-links">
 		    <a href="/newPage/index.html">Home</a>
@@ -22,13 +22,21 @@
 		    <a href="/newPage/blog">Blog</a>
 		    <a href="/newPage/about">About</a> 
 	    </div>
-    </nav>
-    <main>
-	    <p >Main content for home page should be here.</p>
+        
+        <span class="dropdown">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</span></nav>
+    <main><span class="replayBtn"></span>
+	<p >Main content for home page should be here.</p>
     </main>
     <div class="footer">
 	    <p> This will contain icons to linkedin and github </p>
     </div>
-  </body>
+  
+  <script src="app.js"></script>
+
+</body>
   <script src="app.js"></script>
 </html>
