@@ -22,5 +22,5 @@ var play = ()=> {
 
         };
         playIntro();
-    };
-    play();
+};
+if(document.title==="Home"){play();} 
