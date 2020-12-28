@@ -1,5 +1,6 @@
 var replayBtn = document.createElement('span');
-replayBtn.addEventListener('click',()=>{play()});    
+replayBtn.addEventListener('click',()=>{play()});
+replayBtn.classList.add("replayBtn");
 var play = ()=> {
         var elem = document.getElementsByTagName("p")[0];         var main = document.getElementsByTagName('main')[0];
         elem.innerHTML="";
