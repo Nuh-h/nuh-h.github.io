@@ -20,8 +20,17 @@ var play = ()=> {
             };
             await delay(100);
             main.prepend(replayBtn);
-
         };
         playIntro();
 };
 if(document.title==="Home"){play();} 
+
+var navlinks = document.querySelector('.nav-links');
+var dropdown = document.querySelector('.dropdown');
+dropdown.addEventListener('click', drop);
+function drop(){
+	navlinks.classList.toggle('active');
+	dropdown.classList.toggle('active');
+	navlinks.classList.toggle('inactive');
+	document.body.classList.toggle("hidden");
+}

@@ -11,18 +11,21 @@ nav {
 	background-color:#0F0E0E;
 	display:flex;
 	justify-content:space-between;
-	padding:25px;
+	align-items:center;
+	padding:0px;
 	position:relative;
+	height:70px;
 }
+/** Change of plan with logo, leaving the edits as this for now. **/
 nav .logo {
-	background-color:#0E8990;
+	background-color:#0e899000;
 	width:125px;
 	height:85px;
-	border:2px solid #000000;
+	border:0px solid #000000;
 	border-radius:10px;
 	color:#FFFFFF;
 	position:absolute;
-	margin-left:20px;
+	margin-left:40px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -43,15 +46,17 @@ nav .dropdown {
 nav .nav-links{
 	display:flex;
 	justify-content:flex-end;
-	width:100%;
+	width:97%;
 }
 nav .nav-links a{
 	text-decoration:none;
 	color:#C8E320;
-	margin:0 20px;
+	margin:0 10px;
+	padding:20px 15px;
 }
 
 nav a:hover{
+	background-color:#0a1b10;
 	border-bottom:1px solid white;
 	transition: border 2s ease; 
 	-webkit-transition:  border 2s ease;
@@ -108,27 +113,57 @@ main .replayBtn:hover{
 
 /*** IN PROGRESS ***/
 @media screen and (max-width:650px){
+	main{
+		width:90%
+	}
 	nav .logo {
 		background:none;
-		padding:0;
-		margin:0;	
 		position:relative;
 		border:none;
-		height:15px;
+		margin:0;
 	}
-
-	nav .nav-links {
+    .nav-links.inactive{
+    	display:none;
+    }
+    .nav-links.active{
+    	display:visible;
+    }
+	.nav-links.active {
 		flex-direction:column;
 		align-items:center;
-		justify-content:space-evenly;
+		position:absolute;
+		justify-content:center;
+		background-color:#000000de;
+		width:100vw;
+		padding-top:500px;
+		height:190vh;
+		z-index:5;
 	}
+	.nav-links.active a{
+	    width:90%;
+	    display:flex;
+	    justify-content:center;
+	}
+/* 	.nav-links.active a:hover{
+		background-color:#0a1b10;
+	} */
     
     nav .dropdown {
     	display:flex;
+    	padding:20px;
+    	z-index:5;
     }
-
-    nav .dropdown:hover{
-	    cursor:pointer;
+    .dropdown.active .line1{
+    	transform:rotate(45deg);
+    	position:absolute;
+    	transition: auto 1s ease;
     }
+    .dropdown.active .line2{
+    	transform:rotate(-45deg);
+        transition: auto 1s ease;
 
+    }
+    .dropdown.active .line3{
+    	display:none;
+    }
 }
