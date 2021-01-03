@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuh's webpage</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/homeStyle.css">
+  </head>
+  <body>
+    <main>
+      <h1> Nuh-h ! </h1>
+      <p> Hi, welcome! This is very much a work in progress and this layout will most likely change but
+	      for now if you are feeling adventurous, go ahead and click away on the below cards. </p>
+      <!-- ********* CARDS ********* -->
+      <div class="stuff"> 
+	<div class="oldStuff cards">
+		<a href="oldPage.html" target="_blank">
+			<p> The "Old" Website. </p>
+			<img src="/images/OldPage-Design.png" alt="The Design of this webpage's predecessor"> </img>
+		</a>
+	</div>
+	<div class="newStuff cards">
+		<a href="#" target="_blank">
+			<p>New Build Website incoming.</p>
+			<p>This card will soon link to a page detailing any challenges I am completing.</p>
+			<img src="/images/desktop-design.jpg" alt="FrontEndMentor Design Challenge"> </img>
+		</a>
+	</div>
+      </div>
+      <!-- ******** BRIEF QnA ******** -->
+      <div class="qna">
+    		<h3> Brief Q'n'A </h3>
+    		<ul title="Click to expand/collapse" onclick="dropdown(1)">
+			<li><span>+</span> Who am I?</li>
+			<li class="first"> I am originally a nomad, and now I am  an adventurer both in the digital and physical world.</li>
+		  </ul>
+		  
+		  <ul title="Click to expand/collapse" onclick="dropdown(2)"> 
+			<li><span>+</span> What is up with this website? </li>
+			<li class="second disappear"> The original intention was to practise and experiment with HTML/CSS/JS, and while this remains to be the case, the intention now is to gear it towards being the place to host stories of my adventures in the tech world. There are many ideas, and projects I hope to tinker with so this will be a good space to share them.</li>
+		  </ul>
+		  
+		  <ul title="Click to expand/collapse" onclick="dropdown(3)"> 
+			<li><span>+</span> One thing I learnt so far? </li>
+			<li class="third disappear"> Accessibility is one area which I never quite knew anything about but has begun to interest me strongly, and I guess it is just about trying to do the right thing.  I used to spend some seconds testing the limits of interactivity in apps and websites, because I noticed how very much realistic/intuitive the interactions were. I appreciate them a lot more now, knowing exactly the kind of effort that went into them. </li>
+		  </ul>
+      </div>
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <div>
+          <h2>Elsewhere...</h2>
+          <ul class="contact-list">
+            <li><a href="https://www.github.com/nuh-h" target="_blank">GitHub</a></li>
+            <li><a href="#" >LinkedIn</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+   <script src="app.js"></script>
+  </body>
+</html>
