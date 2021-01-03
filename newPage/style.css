@@ -120,6 +120,7 @@ h2,p {
 .projects-container{
 	background-color:aliceblue;
 	width:80%;
+
 }
 .projects{
 	background-color:#6c8194;
@@ -127,7 +128,10 @@ h2,p {
 	flex-direction:row;
 	justify-content:space-evenly;
     flex-wrap:wrap;
-}
+/* 	background:url("https://picsum.photos/200/300");/*best with water-bg*/
+/* 	background-repeat:no-repeat;
+	background-size:cover; */
+} 
 .project{
 	display:flex;
 	flex-direction:column;
@@ -197,9 +201,63 @@ h2,p {
 	font-size:18px;
 	width:90%;
 }
+/*** about page ***/
+.container{
+	width:80%;
+	background-color:white;
+	overflow:hidden;
+	display:flex;
+	flex-direction:column;
+	box-shadow: 0 16px 25px -15px #000000a8;
+	background:url("https://picsum.photos/200/300");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.qna{
+	margin:0 30px;
+	margin-bottom:100%;
+}
+.qna ul{
+	list-style-type:none;
+	padding-left:0;
+	margin-left:0;
+	margin:3px;
+}
+.question{
+	background-color:black;
+	color:white;
+	padding: 0 7px;
+}
+
+.question span{
+	float:left;
+	margin-right:10px;
+}
+
+.question:hover {
+	color:hsl(14, 88%, 65%);
+	cursor:pointer;
+	font-weight:700;
+	outline:none;
+}
+.question:focus span{
+	transform:rotate(-90deg);
+	transition:0.5s;
+}
+.answer{
+	height:0;
+	overflow:hidden;
+	font-size:15px;
+    padding-left:30px;
+}
+.question:focus ~ .answer{
+	transition:0.5s;
+	padding:10px 30px;
+	height:100%;
+}
 
 @media screen and (max-width:650px){
-	.intro,.projects-container,.blog-posts{
+	.intro,.projects-container,.blog-posts,.container{
 		width:90%
 	}
 	nav .logo {
@@ -253,4 +311,5 @@ h2,p {
     .dropdown.active .line3{
     	display:none;
     }
+
 }
