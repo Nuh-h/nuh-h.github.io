@@ -128,11 +128,12 @@ h2,p {
 	justify-content:space-evenly;
     flex-wrap:wrap;
 }
-.project{	
+.project{
+	display:flex;
+	flex-direction:column;
 	width:270px;
-	height:170px;
 	margin:30px;
-/* 	overflow:hidden; */
+	overflow:hidden;
     border-radius:12px;
     border:1px solid black;
 }
@@ -140,41 +141,40 @@ h2,p {
 /* 	filter: drop-shadow(0 0 10px #000000); */
     border-color:#ffff00;
 }
-.project p{
-	background-color:#3cca14;
+.project img{
+	width:270px;
+}
+.project .project-info{
+    background-color:#8aa3b9;
+    height:100px;
+}.project-name{
+/* 	background-color:#3cca14; */
+    font-size:15px;
+    font-weight:700;
+    margin:5px 0px;
+}
+.project-description{
+/* 	background-color:yellow; */
+    font-size:15px;
+    margin:5px 0px;
+}
+.project .project-links{
+	display:flex;
+	justify-content:space-around;
+	width:100%;
+}
+.project-links a{
+	background-color:#0f0e0e;
+	padding:5px 35px;
+	margin:5px;
+	color:#f4faff;
+	border-radius:4px;
+	text-decoration:none;
+}
+.project-links a:hover{
+	background-color:#0d1227;
 }
 
-.project1{
-/* 	background:url("https://images.unsplash.com/photo-1609524417844-58c30a965a97?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"); */
-    background:url("https://tudo.netlify.app/tudo-thumbnail.png");
-    background-position:center;
-	background-size:cover;
-}
-.project2{
-/* 	background:url("https://images.unsplash.com/photo-1607622209522-f320825517f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"); */
-    background:url("https://leaguetable.netlify.app/leaguetable-thumbnail.png");
-    background-position:center;
-	background-size:cover;
-}
-.project3{
-/* 	background:url("https://images.unsplash.com/photo-1604432043252-df89dd7ec397?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80"); */
-    background:url("https://wzq.netlify.app/wzq-thumbnail.png");
-    background-position:center;
-	background-size:cover;
-}
-.project4{
-/* 	background:url("https://images.unsplash.com/photo-1601639338450-83b8676780de?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMnxobWVudlFoVW14TXx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"); */
-    background:url("https://checksnake.netlify.app/checksnake-thumbnail.png");    
-    background-position:center;
-	background-size:cover;
-}
-.project5{
-	background:url("https://images.unsplash.com/photo-1575795325632-377ca781cf78?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=746&q=80") no-repeat;
-	background-position:center;
-	background-size:cover;
-
-}
-/*** IN PROGRESS ***/
 @media screen and (max-width:650px){
 	.intro,.projects-container{
 		width:90%
