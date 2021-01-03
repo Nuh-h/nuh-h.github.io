@@ -174,9 +174,32 @@ h2,p {
 .project-links a:hover{
 	background-color:#0d1227;
 }
+/*** blog page ***/
+.blog-posts{
+	width:80%;
+	background-color:#e8e8e7;
+}
+.post{
+	display:flex;
+	background-color:#ababab;
+	margin:10px;
+}
+.post-date{
+    margin:15px 10px;
+}
+.post-title{
+	margin:10px 0;
+	font-size:25px;
+	width:90%;
+	font-weight:900;
+}
+.post-content{
+	font-size:18px;
+	width:90%;
+}
 
 @media screen and (max-width:650px){
-	.intro,.projects-container{
+	.intro,.projects-container,.blog-posts{
 		width:90%
 	}
 	nav .logo {
