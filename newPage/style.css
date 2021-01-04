@@ -78,29 +78,45 @@ nav a:hover{
 
 /**** index page intro ****/
 .intro {
+	display:flex;
 	justify-content:center;
-	width:60%;
 	margin:100px auto;
 	margin-bottom:10px;
-	background-color:#f5f5dcd6;
+	border:1px solid white;
 	border-radius:12px;
+	word-wrap:nowrap;
+	width:70%;
+	overflow:hidden;
+}
+.introText{
+	font-size:1.53em;
+	margin:12px;
+	padding:5px;
+	color:#ffffff;
+	overflow:hidden;
+	word-wrap:break-word;
+}
+.introText:after {
+	content:"";
+    overflow: hidden; 
+    border-right: .15em solid #58e125; 
+    animation: typing 3.5s steps(40, end),
+        blink-caret .95s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-.intro p {
-	border:0px solid black;
-	border-radius:0px;
-	background-color:#f57841;
-	display:flex;
-	justify-content:left;
-	align-items:center;
-	margin:0 auto;
-	width:80%;
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ffffff; }
 }
 .intro .replayBtn {
-	color:#da4040;
-	float:right;
+	color:#039090;
+	float:left;
 	z-index:3;
-	position:absolute;
+	position:relative;
 	padding:5px;
 }
 .intro .replayBtn:before{
@@ -111,7 +127,7 @@ nav a:hover{
 	float:right;
 }
 .intro .replayBtn:hover{
-	color:#171619;
+	color:#04eaea;
     cursor:pointer;
     transition: color 1s ease;
 }
