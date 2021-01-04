@@ -1,0 +1,350 @@
+/*** Common css across all pages ****/
+html {
+	font-family: 'Stardos Stencil', cursive;
+}
+body {
+	background-color:#1F422B;
+	margin:0;
+}
+nav {
+	background-color:#0F0E0E;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:0px;
+	position:relative;
+	height:70px;
+}
+nav .logo {/* Change of plan with logo, leaving the edits as this for now. **/
+	background-color:#0e899000;
+	width:125px;
+	height:85px;
+	border:0px solid #000000;
+	border-radius:10px;
+	color:#FFFFFF;
+	position:absolute;
+	margin-left:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:40px;
+}
+nav .dropdown {
+	display:flex;
+	flex-direction:column;
+	display:none;
+}
+.line1,.line2,.line3{
+	width:30px;
+	height:3px;
+	margin:3px;
+	background-color:#a1e09b;
+}
+nav .nav-links{
+	display:flex;
+	justify-content:flex-end;
+	width:97%;
+}
+nav .nav-links a{
+	text-decoration:none;
+	color:#C8E320;
+	margin:0 10px;
+	padding:20px 15px;
+}
+nav a:hover{
+	background-color:#0a1b10;
+	border-bottom:1px solid white;
+	transition: border 2s ease; 
+	-webkit-transition:  border 2s ease;
+	-moz-transition:  border 2s ease;
+	-o-transition:  border 2s ease;
+	-ms-transition: border 2s ease;
+}
+.footer{
+	border-top:1px solid grey;
+	display:flex;
+	justify-content:flex-end;
+	margin:20px 15% 0px 15%;
+}
+.footer a{
+    padding:10px;
+}
+
+.footer img{
+	width:40px;
+	height:40px;
+}
+
+
+/**** index page intro ****/
+.intro {
+	display:flex;
+	justify-content:center;
+	margin:100px auto;
+	margin-bottom:10px;
+	border:1px solid white;
+	border-radius:12px;
+	word-wrap:nowrap;
+	width:70%;
+	overflow:hidden;
+}
+.introText{
+	font-size:1.53em;
+	margin:12px;
+	padding:5px;
+	color:#ffffff;
+	overflow:hidden;
+	word-wrap:break-word;
+}
+.introText:after {
+	content:"";
+    overflow: hidden; 
+    border-right: .15em solid #58e125; 
+    animation: typing 3.5s steps(40, end),
+        blink-caret .95s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ffffff; }
+}
+.intro .replayBtn {
+	color:#039090;
+	float:left;
+	z-index:3;
+	position:relative;
+	padding:5px;
+}
+.intro .replayBtn:before{
+	font-family:"Font Awesome 5 Free";
+	font-size:25px;
+	font-weight:900;
+	content:"\f144";
+	float:right;
+}
+.intro .replayBtn:hover{
+	color:#04eaea;
+    cursor:pointer;
+    transition: color 1s ease;
+}
+
+/**** projects page ****/
+main{
+	display:flex;
+	justify-content:center;
+	width:100%;
+}
+h2,p {
+	padding-left:5%;
+}
+.projects-container{
+	background-color:aliceblue;
+	width:80%;
+
+}
+.projects{
+	background-color:#6c8194;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+    flex-wrap:wrap;
+/* 	background:url("https://picsum.photos/200/300");/*best with water-bg*/
+/* 	background-repeat:no-repeat;
+	background-size:cover; */
+} 
+.project{
+	display:flex;
+	flex-direction:column;
+	width:270px;
+	margin:30px;
+	overflow:hidden;
+    border-radius:12px;
+    border:1px solid black;
+}
+.project:hover{
+/* 	filter: drop-shadow(0 0 10px #000000); */
+    border-color:#ffff00;
+}
+.project img{
+	width:270px;
+}
+.project .project-info{
+    background-color:#8aa3b9;
+    height:100px;
+}.project-name{
+/* 	background-color:#3cca14; */
+    font-size:15px;
+    font-weight:700;
+    margin:5px 0px;
+}
+.project-description{
+/* 	background-color:yellow; */
+    font-size:15px;
+    margin:5px 0px;
+}
+.project .project-links{
+	display:flex;
+	justify-content:space-around;
+	width:100%;
+}
+.project-links a{
+	background-color:#0f0e0e;
+	padding:5px 35px;
+	margin:5px;
+	color:#f4faff;
+	border-radius:4px;
+	text-decoration:none;
+}
+.project-links a:hover{
+	background-color:#0d1227;
+}
+/*** blog page ***/
+.blog-posts{
+	width:80%;
+	background-color:#e8e8e7;
+}
+.post{
+	display:flex;
+	background-color:#ababab;
+	margin:10px;
+}
+.post-date{
+    margin:15px 10px;
+}
+.post-title{
+	margin:10px 0;
+	font-size:25px;
+	width:90%;
+	font-weight:900;
+}
+.post-content{
+	font-size:18px;
+	width:90%;
+}
+/*** about page ***/
+.container{
+	width:80%;
+	background-color:white;
+	overflow:hidden;
+	display:flex;
+	flex-direction:column;
+	box-shadow: 0 16px 25px -15px #000000a8;
+	background:url("https://picsum.photos/id/989/200");/** good for mobile**/
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.container p{
+	padding:0;
+	margin:25px 30px;
+}
+.qna{
+	margin:0 30px;
+	margin-bottom:20%;
+}
+.qna ul{
+	list-style-type:none;
+	padding-left:0;
+	margin-left:0;
+	margin:3px;
+}
+.question{
+	background-color:black;
+	color:white;
+	padding: 0 7px;
+}
+
+.question span{
+	float:left;
+	margin-right:10px;
+}
+
+.question:hover {
+	color:hsl(14, 88%, 65%);
+	cursor:pointer;
+	font-weight:700;
+	outline:none;
+}
+.question:focus span{
+	transform:rotate(-90deg);
+	transition:0.5s;
+}
+.answer{
+	height:0;
+	overflow:hidden;
+	font-size:15px;
+    padding-left:30px;
+}
+.question:focus ~ .answer{
+	transition:0.5s;
+	padding:10px 30px;
+	height:100%;
+}
+
+@media screen and (max-width:650px){
+	.intro,.projects-container,.blog-posts,.container{
+		width:90%
+	}
+	nav .logo {
+		background:none;
+		position:relative;
+		border:none;
+		margin:0;
+	}
+    .nav-links.inactive{
+    	display:none;
+    }
+    .nav-links.active{
+    	display:visible;
+    }
+	.nav-links.active {
+		flex-direction:column;
+		align-items:center;
+		position:absolute;
+		justify-content:center;
+		background-color:#000000de;
+		width:100vw;
+		padding-top:500px;
+		height:190vh;
+		z-index:5;
+	}
+	.nav-links.active a{
+	    width:90%;
+	    display:flex;
+	    justify-content:center;
+	    font-size:25px;
+	}
+    
+    nav .dropdown {
+    	display:flex;
+    	padding:20px;
+    	z-index:5;
+    }
+    .dropdown.active .line1{
+    	transform:rotate(45deg);
+    	position:absolute;
+    	transition: auto 1s ease;
+    }
+    .dropdown.active .line2{
+    	transform:rotate(-45deg);
+        transition: auto 1s ease;
+
+    }
+    .dropdown.active .line3{
+    	display:none;
+    }
+
+    .qna{
+		margin:0 30px;
+		margin-bottom:100%;
+	}
+	.container{
+        background:url("https://picsum.photos/id/922/200");/** good for mobile**/
+        background-repeat:no-repeat;
+	    background-size:cover;
+	}
+
+}
