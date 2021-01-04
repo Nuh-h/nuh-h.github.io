@@ -1,4 +1,4 @@
-/*** Common css across all pages ****/
+/**** Common across all pages ****/
 html {
 	font-family: 'Stardos Stencil', cursive;
 }
@@ -15,7 +15,7 @@ nav {
 	position:relative;
 	height:70px;
 }
-nav .logo {/* Change of plan with logo, leaving the edits as this for now. **/
+nav .logo {/* Change of plan with logo, leaving the edits as this for now. */
 	background-color:#0e899000;
 	width:125px;
 	height:85px;
@@ -166,7 +166,6 @@ h2,p {
     border:1px solid black;
 }
 .project:hover{
-/* 	filter: drop-shadow(0 0 10px #000000); */
     border-color:#ffff00;
 }
 .project img{
@@ -176,13 +175,11 @@ h2,p {
     background-color:#8aa3b9;
     height:100px;
 }.project-name{
-/* 	background-color:#3cca14; */
     font-size:15px;
     font-weight:700;
     margin:5px 0px;
 }
 .project-description{
-/* 	background-color:yellow; */
     font-size:15px;
     margin:5px 0px;
 }
@@ -233,7 +230,7 @@ h2,p {
 	display:flex;
 	flex-direction:column;
 	box-shadow: 0 16px 25px -15px #000000a8;
-	background:url("https://picsum.photos/id/989/200");/** good for mobile**/
+	background:url("https://picsum.photos/id/989/200");
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -249,7 +246,7 @@ h2,p {
 	list-style-type:none;
 	padding-left:0;
 	margin-left:0;
-	margin:3px;
+	margin:1px;
 }
 .question{
 	background-color:black;
@@ -342,7 +339,7 @@ h2,p {
 		margin-bottom:100%;
 	}
 	.container{
-        background:url("https://picsum.photos/id/922/200");/** good for mobile**/
+        background:url("https://picsum.photos/id/922/200");
         background-repeat:no-repeat;
 	    background-size:cover;
 	}
