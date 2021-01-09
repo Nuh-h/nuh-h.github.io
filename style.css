@@ -16,10 +16,11 @@ nav {
 	height:70px;
 }
 nav .logo {/* Change of plan with logo, leaving the edits as this for now. */
-	background-color:#0e899000;
-	width:125px;
-	height:85px;
-	border:0px solid #000000;
+/* 	background-color:#0e899000; */
+/* 	width:125px; */
+/* 	height:85px; */
+	overflow:hidden;
+	border:2px solid #0f0e0e;
 	border-radius:10px;
 	color:#FFFFFF;
 	position:absolute;
@@ -28,6 +29,13 @@ nav .logo {/* Change of plan with logo, leaving the edits as this for now. */
 	justify-content:center;
 	align-items:center;
 	font-size:40px;
+}
+.logo{
+	content:"";
+	background:url("https://www.flaticon.com/svg/static/icons/svg/41/41467.svg");
+	background-size:cover;
+	background-repeat:repeat;
+	background-color:#1f422b;
 }
 nav .dropdown {
 	display:flex;
@@ -200,9 +208,13 @@ h2,p {
 	background-color:#0d1227;
 }
 /*** blog page ***/
-.blog-posts{
+.blog-container{
 	width:80%;
 	background-color:#e8e8e7;
+}
+.blog-posts{
+	display:flex;
+	flex-direction:column-reverse;
 }
 .post{
 	display:flex;
@@ -214,12 +226,12 @@ h2,p {
 }
 .post-title{
 	margin:10px 0;
-	font-size:25px;
+	font-size:20px;
 	width:90%;
 	font-weight:900;
 }
 .post-content{
-	font-size:18px;
+	font-size:16px;
 	width:90%;
 }
 /*** about page ***/
@@ -282,14 +294,14 @@ h2,p {
 }
 
 @media screen and (max-width:650px){
-	.intro,.projects-container,.blog-posts,.container{
-		width:90%
+	.intro,.projects-container,.blog-container,.container{
+		width:95%
 	}
 	nav .logo {
-		background:none;
+/* 		background:none; */
 		position:relative;
 		border:none;
-		margin:0;
+/* 		margin:0; */
 	}
     .nav-links.inactive{
     	display:none;
