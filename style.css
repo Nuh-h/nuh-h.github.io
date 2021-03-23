@@ -16,9 +16,6 @@ nav {
 	height:70px;
 }
 nav .logo {/* Change of plan with logo, leaving the edits as this for now. */
-/* 	background-color:#0e899000; */
-/* 	width:125px; */
-/* 	height:85px; */
 	overflow:hidden;
 	border:2px solid #0f0e0e;
 	border-radius:10px;
@@ -120,25 +117,6 @@ nav a:hover{
   from, to { border-color: transparent }
   50% { border-color: #ffffff; }
 }
-.intro .replayBtn {
-	color:#039090;
-	float:left;
-	z-index:3;
-	position:relative;
-	padding:5px;
-}
-.intro .replayBtn:before{
-	font-family:"Font Awesome 5 Free";
-	font-size:25px;
-	font-weight:900;
-	content:"\f144";
-	float:right;
-}
-.intro .replayBtn:hover{
-	color:#04eaea;
-    cursor:pointer;
-    transition: color 1s ease;
-}
 
 /**** projects page ****/
 main{
@@ -146,7 +124,7 @@ main{
 	justify-content:center;
 	width:100%;
 }
-h2,p {
+h2, p {
 	padding-left:5%;
 }
 .projects-container{
@@ -175,6 +153,7 @@ h2,p {
 }
 .project:hover{
     border-color:#ffff00;
+	background-color: #ffff00;
 }
 .project img{
 	width:270px;
@@ -182,16 +161,15 @@ h2,p {
 .project .project-info{
     background-color:#8aa3b9;
     height:100px;
-}.project-name{
+}
+
+.project-name{ font-weight:700; }
+
+.project-description, .project-name{
     font-size:15px;
-    font-weight:700;
     margin:5px 0px;
 }
-.project-description{
-    font-size:15px;
-    margin:5px 0px;
-}
-.project .project-links{
+.project-links{
 	display:flex;
 	justify-content:space-around;
 	width:100%;
@@ -207,33 +185,54 @@ h2,p {
 .project-links a:hover{
 	background-color:#0d1227;
 }
+
 /*** blog page ***/
 .blog-container{
 	width:80%;
 	background-color:#e8e8e7;
+	min-height: 70vh;
 }
 .blog-posts{
 	display:flex;
 	flex-direction:column-reverse;
 }
 .post{
-	display:flex;
-	background-color:#ababab;
+	background-color:#ababab;/*#1F422B*/
 	margin:10px;
+	height:40px;
+	overflow:hidden;
+	cursor: pointer;
+	border-bottom: 1px solid rgb(247, 115, 7);
 }
+.post:hover {
+	transition: height 8s all .5s;
+	height:100%;
+	border-bottom:none;
+}
+
 .post-date{
-    margin:15px 10px;
+    margin:15px 25px;
+	text-align: right;
+	color:navy
 }
 .post-title{
 	margin:10px 0;
 	font-size:20px;
-	width:90%;
 	font-weight:900;
+	text-align:left;
+}
+.post-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 .post-content{
 	font-size:16px;
 	width:90%;
+	margin-top:0;
+	padding-top:0;
 }
+
 /*** about page ***/
 .container{
 	width:80%;
